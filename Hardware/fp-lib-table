@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "Library")(type "KiCad")(uri "${DROPBOXPRJ}/GitHub/rp2040_MotorController/Hardware/lib/Library.pretty")(options "")(descr ""))
-)
