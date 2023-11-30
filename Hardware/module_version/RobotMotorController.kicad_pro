@@ -11,14 +11,14 @@
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
         "courtyard_line_width": 0.049999999999999996,
-        "dimension_precision": 4,
+        "dimension_precision": 2,
         "dimension_units": 3,
         "dimensions": {
           "arrow_length": 1270000,
           "extension_offset": 500000,
           "keep_text_aligned": true,
           "suppress_zeroes": false,
-          "text_position": 0,
+          "text_position": 1,
           "units_format": 1
         },
         "fab_line_width": 0.09999999999999999,
@@ -40,8 +40,8 @@
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_h": 0.7999999999999999,
+        "silk_text_size_v": 0.7999999999999999,
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
@@ -407,7 +407,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -439,14 +439,14 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.25,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.25,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -455,10 +455,10 @@
         "microvia_drill": 0.1,
         "name": "ANALOG",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "schematic_color": "rgb(0, 0, 132)",
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.25,
         "wire_width": 6
       },
       {
@@ -472,11 +472,11 @@
         "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
-        "via_diameter": 1.0,
-        "via_drill": 0.7,
-        "wire_width": 6
+        "schematic_color": "rgb(0, 0, 0)",
+        "track_width": 0.3,
+        "via_diameter": 0.7,
+        "via_drill": 0.4,
+        "wire_width": 10
       },
       {
         "bus_width": 12,
@@ -487,20 +487,93 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "POWER",
+        "name": "POWER_HIGH",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(194, 0, 0)",
+        "track_width": 3.0,
+        "via_diameter": 1.4,
+        "via_drill": 1.0,
+        "wire_width": 10
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "POWER_LOW",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
-        "via_diameter": 1.0,
-        "via_drill": 0.7,
+        "track_width": 0.3,
+        "via_diameter": 0.7,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "POWER_MID",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(194, 0, 0)",
+        "track_width": 0.4,
+        "via_diameter": 0.8,
+        "via_drill": 0.5,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWM",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(132, 0, 132)",
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.25,
         "wire_width": 6
       }
     ],
     "meta": {
       "version": 3
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {
+      "+3V3": "rgb(255, 0, 0)",
+      "+5V": "rgb(255, 0, 0)",
+      "E1_CHA": "rgb(255, 153, 0)",
+      "E1_CHB": "rgb(255, 153, 0)",
+      "E2_CHA": "rgb(20, 116, 45)",
+      "E2_CHB": "rgb(20, 116, 45)",
+      "EN1": "rgb(255, 153, 0)",
+      "GND": "rgb(0, 0, 0)",
+      "MOT1_AUX": "rgb(255, 153, 0)",
+      "MOT1_EN": "rgb(255, 153, 0)",
+      "MOT1_N": "rgb(255, 153, 0)",
+      "MOT1_P": "rgb(255, 153, 0)",
+      "MOT2_AUX": "rgb(20, 116, 45)",
+      "MOT2_EN": "rgb(20, 116, 45)",
+      "MOT2_N": "rgb(20, 116, 45)",
+      "MOT2_P": "rgb(20, 116, 45)"
+    },
+    "netclass_assignments": {
+      "BATT_OUT": "HIGH_POWER",
+      "Net-(J10-+)": "HIGH_POWER",
+      "Net-(J8-+)": "HIGH_POWER",
+      "Vdrive": "HIGH_POWER"
+    },
     "netclass_patterns": [
       {
         "netclass": "ANALOG",
@@ -527,32 +600,116 @@
         "pattern": "GND"
       },
       {
-        "netclass": "POWER",
+        "netclass": "POWER_LOW",
         "pattern": "+3V3"
       },
       {
-        "netclass": "POWER",
+        "netclass": "POWER_MID",
         "pattern": "+5V"
       },
       {
-        "netclass": "POWER",
+        "netclass": "POWER_MID",
         "pattern": "/Supply and Power/O_MOT"
       },
       {
-        "netclass": "POWER",
+        "netclass": "POWER_MID",
         "pattern": "/Supply and Power/O_REG"
       },
       {
-        "netclass": "POWER",
+        "netclass": "POWER_MID",
         "pattern": "/Supply and Power/O_SBC"
       },
       {
-        "netclass": "POWER",
+        "netclass": "POWER_MID",
         "pattern": "/Supply and Power/Vin"
       },
       {
-        "netclass": "POWER",
+        "netclass": "POWER_MID",
         "pattern": "Vdrive"
+      },
+      {
+        "netclass": "POWER_MID",
+        "pattern": "/Supply and Power/SW"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "/Analog/I1"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "/Analog/I2"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "/Analog/V2"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "/Analog/V1"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "ADC_M1_VOLTAGE"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "ADC_M2_VOLTAGE"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "ADC_M2_CURRENT"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "ADC_M1_CURRENT"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "E1_CHA"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "E1_CHB"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "E2_CHA"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "E2_CHB"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "MOT1_P"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "MOT1_N"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "MOT2_P"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "MOT2_N"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "PWMA1"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "PWMB1"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "PWMA2"
+      },
+      {
+        "netclass": "PWM",
+        "pattern": "PWMB2"
       }
     ]
   },
@@ -627,6 +784,10 @@
     [
       "625e8676-0805-409d-9d3d-3f721bb46c46",
       "Analog"
+    ],
+    [
+      "ed1375b8-d69d-4f33-9027-8370f2b98d96",
+      "PowerOut"
     ]
   ],
   "text_variables": {}
