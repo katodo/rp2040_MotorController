@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.8,
+          "width": 2.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -180,7 +180,8 @@
         0.4,
         0.6,
         1.0,
-        1.5
+        1.5,
+        3.0
       ],
       "via_dimensions": [
         {
@@ -570,7 +571,7 @@
     },
     "netclass_assignments": {
       "BATT_OUT": "HIGH_POWER",
-      "Net-(J10-+)": "HIGH_POWER",
+      "Net-(J10--)": "HIGH_POWER",
       "Net-(J8-+)": "HIGH_POWER",
       "Vdrive": "HIGH_POWER"
     },
