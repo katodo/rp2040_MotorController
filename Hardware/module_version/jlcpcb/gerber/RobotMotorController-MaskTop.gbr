@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,7.0.9-7.0.9~ubuntu22.04.1*%
-%TF.CreationDate,2023-12-11T07:49:41+01:00*%
+%TF.CreationDate,2023-12-20T07:42:30+01:00*%
 %TF.ProjectId,RobotMotorController,526f626f-744d-46f7-946f-72436f6e7472,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 7.0.9-7.0.9~ubuntu22.04.1) date 2023-12-11 07:49:41*
+G04 Created by KiCad (PCBNEW 7.0.9-7.0.9~ubuntu22.04.1) date 2023-12-20 07:42:30*
 %MOMM*%
 %LPD*%
 G01*
@@ -543,10 +543,10 @@ D15*
 X-1012500Y18235000D03*
 X-2587500Y18235000D03*
 %TD*%
-D10*
+D36*
 %TO.C,R49*%
-X-11925000Y66300000D03*
-X-10275000Y66300000D03*
+X-9900000Y64075000D03*
+X-9900000Y65725000D03*
 %TD*%
 D20*
 %TO.C,TP14*%

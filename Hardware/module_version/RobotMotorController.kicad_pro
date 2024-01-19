@@ -118,14 +118,14 @@
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.19999999999999998,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.09999999999999999,
         "min_via_diameter": 0.39999999999999997,
@@ -570,9 +570,9 @@
       "MOT2_P": "rgb(20, 116, 45)"
     },
     "netclass_assignments": {
+      "/PowerOut/Vout1": "HIGH_POWER",
+      "/PowerOut/Vout2": "HIGH_POWER",
       "BATT_OUT": "HIGH_POWER",
-      "Net-(J10--)": "HIGH_POWER",
-      "Net-(J8-+)": "HIGH_POWER",
       "Vdrive": "HIGH_POWER"
     },
     "netclass_patterns": [
